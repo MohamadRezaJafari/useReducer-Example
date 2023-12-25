@@ -1,5 +1,6 @@
 import { useReducer } from "react";
 import "./App.css";
+import Post from "./components/Post";
 
 const INITIAL_STATE = 0;
 
@@ -49,6 +50,7 @@ function App() {
       <button onClick={handleInc}>+</button>
       <button onClick={handleReset}>Reset</button>
       <button onClick={handleDec}>-</button>
+      <Post />
     </div>
   );
 }
